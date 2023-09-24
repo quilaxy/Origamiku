@@ -19,9 +19,7 @@ body {
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    max-height: 130px;
     background-color: var(--color-blue);
 }
 
@@ -30,6 +28,7 @@ header h1 {
     font-size: 5rem;
     padding: 20px;
     color: var(--color-white);
+    text-align: center;
 }
 
 header h1:hover {
@@ -43,6 +42,7 @@ nav {
 
 main{
     display: flex;
+    flex-direction: column;
 }
 
 aside {
@@ -111,8 +111,14 @@ aside h3:hover {
     color: var(--color-red);
 }
 
+.first-content {
+    display: flex;
+}
+
 .container {
     width: 80%;
+    position: relative;
+    right: 0;
 }
 
 .content {
@@ -285,10 +291,6 @@ footer p {
 }
 
 @media only screen and (max-width: 768px) {
-    main {
-        flex-direction: column-reverse;
-    }
-
     aside {
         width: 50%;
         margin: 100px auto;
@@ -305,21 +307,29 @@ footer p {
     aside {
         display: none;
     }
+
+    header {
+        position: sticky;
+        max-height: 13rem;
+        width: 100%;
+        top: 0;
+        z-index: 3;
+    }
+
+    header h1 {
+        margin: 0 auto;
+        text-align: center;
+        font-size: 2.7rem;
+        padding: 10px;
+    }
     
     nav {
         background-color: var(--color-blue);
         display: flex;
         align-items: center;
-        height: 4rem;
-        position: sticky;
-        top: 0;
-        z-index: 3;
-    }
-    
-    .navbar {
-        width: 100%;
-        display: flex;
         justify-content: space-evenly;
+        height: 3rem;
+        width: 100%;
     }
 
     nav a {
@@ -381,10 +391,6 @@ footer p {
 
     footer a {
         font-size: 1rem;
-    }
-
-    header h1 {
-        font-size: 3rem;
     }
 
     .content h2 {

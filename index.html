@@ -16,133 +16,131 @@
 <body>
     <header>
         <h1>Origamiku</h1>
-    </header>
-
-    <nav>
-        <div class="navbar">
+        <nav>
             <a href="#apa-itu-origami">Apa itu origami?</a>
             <a href="#sejarah-origami">Sejarah origami</a>
             <a href="#jenis-origami">Jenis-jenis origami</a>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <main>
-        <aside>
-            <div class="aside-header">
-                <div class="logo">
-                    <img src="image/origami.png" alt="origamiku">
+        <div class="first-content">
+            <aside>
+                <div class="aside-header">
+                    <div class="logo">
+                        <img src="image/origami.png" alt="origamiku">
+                    </div>
+                </div>
+                <h3>Origamiku</h3>
+    
+                <div class="social-media">
+                    <a href="https://web.facebook.com/" target="_blank">
+                        <img src="image/facebook.png" alt="facebook icon">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="image/instagram.png" alt="instagram icon">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank">
+                        <img src="image/twitter.png" alt="twitter icon">
+                    </a>
+                    <a href="https://id.pinterest.com/" target="_blank">
+                        <img src="image/pinterest.png" alt="pinterest icon">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="image/youtube.png" alt="youtube icon">
+                    </a>
+                </div>
+    
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#apa-itu-origami">Apa itu origami?</a></li>
+                        <li><a href="#sejarah-origami">Sejarah origami</a></li>
+                        <li><a href="#jenis-origami">Jenis-jenis origami</a></li>
+                    </ul>
+                </div>
+            </aside>
+    
+            <div class="container">
+                <article class="content" id="apa-itu-origami">
+                    <h2>Apa itu Origami ?</h2>
+                    <p>Origami adalah seni melipat kertas yang berasal dari Jepang. Dengan menggunakan lembaran kertas yang biasanya persegi, 
+                        origami memungkinkan Anda untuk menciptakan berbagai bentuk dan figur hanya dengan melipatnya tanpa menggunakan gunting 
+                        atau lem. Seni ini telah ada selama berabad-abad dan memiliki sejarah yang kaya di Jepang, sebelum akhirnya menyebar ke 
+                        seluruh dunia.</p>
+                </article>
+                <article class="content" id="sejarah-origami">
+                    <h2>Sejarah Origami</h2>
+                    <p>Origami pertama kali muncul di Jepang pada abad ke-17 dan awalnya digunakan untuk upacara agama Shinto. Pada awalnya, 
+                        origami hanya terbatas pada bentuk-bentuk sederhana seperti burung dan bunga. Namun, seiring berjalannya waktu, seniman 
+                        origami semakin kreatif dan mulai menciptakan karya seni yang lebih kompleks.</p>
+                </article>
+                <article class="content type" id="jenis-origami">
+                    <h2>Jenis-Jenis Origami</h2>
+                    <h3>Origami Tradisional</h3>
+                    <p>Ini mencakup model-model klasik seperti burung bangau, bunga sakura, dan kran daratan. Origami tradisional biasanya 
+                        memiliki instruksi yang lebih mudah diikuti.</p>
+                    <h3>Origami Moduler</h3>
+                    <p>Ini melibatkan penggunaan banyak lembaran kertas kecil yang dilipat dan dihubungkan satu sama lain untuk membentuk 
+                        karya yang lebih besar dan rumit.</p>
+                    <h3>Origami 3D</h3>
+                    <p>Dalam jenis ini, Anda dapat menciptakan objek tiga dimensi seperti hewan atau benda-benda dengan lebih banyak kedalaman dan detail.</p>
+                    <h3>Origami Kreatif</h3>
+                    <p>Origami modern memungkinkan Anda untuk berkreasi dengan cara yang lebih bebas. Anda dapat menciptakan karakter fiksi, objek futuristik, 
+                        atau bahkan rekreasi bangunan terkenal dengan origami.</p>
+                </article>
+            </div>
+        </div>
+        <div class="slider">
+            <h2>Galeri Origamiku</h2>
+        </div>
+    
+        <section class="slide-container">
+            <div class="mySlide">
+                <img src="image/Origami/origami1.jpg" alt="origami 1">
+            </div>
+            <div class="mySlide">
+                <img src="image/Origami/origami2.jpg" alt="origami 2">
+            </div>
+            <div class="mySlide">
+                <img src="image/Origami/origami3.jpg" alt="origami 3">
+            </div>
+            <div class="mySlide">
+                <img src="image/Origami/origami4.jpg" alt="origami 4">
+            </div>
+            <div class="mySlide">
+                <img src="image/Origami/origami5.jpg" alt="origami 5">
+            </div>
+            <div class="mySlide">
+                <img src="image/Origami/origami6.jpg" alt="origami 6">
+            </div>
+    
+            <!-- next previous button -->
+            <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+            <a class="next" onclick="plusSlides(1)">&gt;</a>
+    
+            <!-- thumbnail -->
+            <div class="row">
+                <div class="column">
+                    <img class="demo cursor" src="image/Origami/origami1.jpg" onclick="currentSlide(1)" alt="Origami 1">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="image/Origami/origami2.jpg" onclick="currentSlide(2)" alt="Origami 2">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="image/Origami/origami3.jpg"onclick="currentSlide(3)" alt="Origami 3">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="image/Origami/origami4.jpg" onclick="currentSlide(4)" alt="Origami 4">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="image/Origami/origami5.jpg" onclick="currentSlide(5)" alt="Origami 5">
+                </div>
+                <div class="column">
+                    <img class="demo cursor" src="image/Origami/origami6.jpg" onclick="currentSlide(6)" alt="Origami 6">
                 </div>
             </div>
-            <h3>Origamiku</h3>
-
-            <div class="social-media">
-                <a href="https://web.facebook.com/" target="_blank">
-                    <img src="image/facebook.png" alt="facebook icon">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="image/instagram.png" alt="instagram icon">
-                </a>
-                <a href="https://twitter.com/" target="_blank">
-                    <img src="image/twitter.png" alt="twitter icon">
-                </a>
-                <a href="https://id.pinterest.com/" target="_blank">
-                    <img src="image/pinterest.png" alt="pinterest icon">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img src="image/youtube.png" alt="youtube icon">
-                </a>
-            </div>
-
-            <div class="navigation">
-                <ul>
-                    <li><a href="#apa-itu-origami">Apa itu origami?</a></li>
-                    <li><a href="#sejarah-origami">Sejarah origami</a></li>
-                    <li><a href="#jenis-origami">Jenis-jenis origami</a></li>
-                </ul>
-            </div>
-        </aside>
-
-        <div class="container">
-            <article class="content" id="apa-itu-origami">
-                <h2>Apa itu Origami ?</h2>
-                <p>Origami adalah seni melipat kertas yang berasal dari Jepang. Dengan menggunakan lembaran kertas yang biasanya persegi, 
-                    origami memungkinkan Anda untuk menciptakan berbagai bentuk dan figur hanya dengan melipatnya tanpa menggunakan gunting 
-                    atau lem. Seni ini telah ada selama berabad-abad dan memiliki sejarah yang kaya di Jepang, sebelum akhirnya menyebar ke 
-                    seluruh dunia.</p>
-            </article>
-            <article class="content" id="sejarah-origami">
-                <h2>Sejarah Origami</h2>
-                <p>Origami pertama kali muncul di Jepang pada abad ke-17 dan awalnya digunakan untuk upacara agama Shinto. Pada awalnya, 
-                    origami hanya terbatas pada bentuk-bentuk sederhana seperti burung dan bunga. Namun, seiring berjalannya waktu, seniman 
-                    origami semakin kreatif dan mulai menciptakan karya seni yang lebih kompleks.</p>
-            </article>
-            <article class="content type" id="jenis-origami">
-                <h2>Jenis-Jenis Origami</h2>
-                <h3>Origami Tradisional</h3>
-                <p>Ini mencakup model-model klasik seperti burung bangau, bunga sakura, dan kran daratan. Origami tradisional biasanya 
-                    memiliki instruksi yang lebih mudah diikuti.</p>
-                <h3>Origami Moduler</h3>
-                <p>Ini melibatkan penggunaan banyak lembaran kertas kecil yang dilipat dan dihubungkan satu sama lain untuk membentuk 
-                    karya yang lebih besar dan rumit.</p>
-                <h3>Origami 3D</h3>
-                <p>Dalam jenis ini, Anda dapat menciptakan objek tiga dimensi seperti hewan atau benda-benda dengan lebih banyak kedalaman dan detail.</p>
-                <h3>Origami Kreatif</h3>
-                <p>Origami modern memungkinkan Anda untuk berkreasi dengan cara yang lebih bebas. Anda dapat menciptakan karakter fiksi, objek futuristik, 
-                    atau bahkan rekreasi bangunan terkenal dengan origami.</p>
-            </article>
-        </div>
+        </section>
     </main>
-
-    <div class="slider">
-        <h2>Galeri Origamiku</h2>
-    </div>
-
-    <section class="slide-container">
-        <div class="mySlide">
-            <img src="image/Origami/origami1.jpg" alt="origami 1">
-        </div>
-        <div class="mySlide">
-            <img src="image/Origami/origami2.jpg" alt="origami 2">
-        </div>
-        <div class="mySlide">
-            <img src="image/Origami/origami3.jpg" alt="origami 3">
-        </div>
-        <div class="mySlide">
-            <img src="image/Origami/origami4.jpg" alt="origami 4">
-        </div>
-        <div class="mySlide">
-            <img src="image/Origami/origami5.jpg" alt="origami 5">
-        </div>
-        <div class="mySlide">
-            <img src="image/Origami/origami6.jpg" alt="origami 6">
-        </div>
-
-        <!-- next previous button -->
-        <a class="prev" onclick="plusSlides(-1)">&lt;</a>
-        <a class="next" onclick="plusSlides(1)">&gt;</a>
-
-        <!-- thumbnail -->
-        <div class="row">
-            <div class="column">
-                <img class="demo cursor" src="image/Origami/origami1.jpg" onclick="currentSlide(1)" alt="Origami 1">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="image/Origami/origami2.jpg" onclick="currentSlide(2)" alt="Origami 2">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="image/Origami/origami3.jpg"onclick="currentSlide(3)" alt="Origami 3">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="image/Origami/origami4.jpg" onclick="currentSlide(4)" alt="Origami 4">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="image/Origami/origami5.jpg" onclick="currentSlide(5)" alt="Origami 5">
-            </div>
-            <div class="column">
-                <img class="demo cursor" src="image/Origami/origami6.jpg" onclick="currentSlide(6)" alt="Origami 6">
-            </div>
-        </div>
-    </section>
 
     <footer>
         <div class="sosmed">

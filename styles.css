@@ -33,6 +33,11 @@ header h1 {
     color: var(--color-white);
 }
 
+header h1:hover {
+    letter-spacing: 8px;
+    color: var(--color-red);
+}
+
 nav {
     display: none;
 }
@@ -103,6 +108,10 @@ aside h3:hover {
     font-size: 1.5rem;
 }
 
+.navigation a:hover {
+    color: var(--color-red);
+}
+
 .container {
     width: 80%;
 }
@@ -151,6 +160,7 @@ footer {
 
 .information {
     width: 70%;
+    padding: 20px;
 }
 
 .nav-footer {
@@ -225,6 +235,10 @@ footer p {
     }
 
     nav a:hover {
+        color: var(--color-red);
+    }
+
+    nav a:hover {
         text-decoration: underline;
     }
 
@@ -236,6 +250,7 @@ footer p {
         display: flex;
         flex-direction: column;
         width: 30%;
+        padding: 10px 20px;
     }
 
     .sosmed-container {
@@ -290,4 +305,27 @@ footer p {
         font-size: 1.3rem;
     }
 
+}
+
+@media only screen and (max-width: 480px) {
+    nav a {
+        font-size: 1rem;
+    }
+
+    nav a:hover {
+        color: var(--color-red);
+    }
+
+    footer a {
+        font-size: 0.8rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+
+    .icon {
+        width: 25px;
+        height: 25px;
+    }
 }

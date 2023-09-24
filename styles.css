@@ -428,8 +428,13 @@ footer p {
         height: 25px;
     }
 
+    .sosmed {
+        padding: 10px 0px 10px 20px;
+    }
+
     .sosmed-container h4 {
         font-size: 1.2rem;
+        padding-left: 1px;
     }
 
     .sosmed-icon img {

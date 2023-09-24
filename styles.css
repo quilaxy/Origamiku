@@ -344,7 +344,7 @@ footer p {
         display: flex;
         flex-direction: column;
         width: 30%;
-        padding: 10px 20px;
+        padding: 10px 0px 10px 30px;
     }
 
     .sosmed-container {
@@ -426,5 +426,17 @@ footer p {
     .icon {
         width: 25px;
         height: 25px;
+    }
+
+    .sosmed-container h4 {
+        font-size: 1.2rem;
+    }
+
+    .sosmed-icon img {
+        width: 13px;
+    }
+
+    .slider h2 {
+        font-size: 2rem;
     }
 }

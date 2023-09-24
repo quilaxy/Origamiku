@@ -11,7 +11,6 @@
     --color-white: #ffffff;
     --color-blue: #171a4b;
     --color-red: #df3f42;
-    --color-soft: #f5e7f1;
 }
 
 body {
@@ -128,6 +127,10 @@ aside h3:hover {
     margin-bottom: 10px;
 }
 
+.content h2:hover {
+    color: var(--color-red);
+}
+
 .content h3 {
     color: var(--color-blue);
     font-size: 2rem;
@@ -151,7 +154,7 @@ aside h3:hover {
 footer {
     background-color: var(--color-blue);
     height: 100px;
-    margin-top: 60px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -191,6 +194,96 @@ footer p {
     display: none;
 }
 
+.slider {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.slider h2 {
+    font-family: 'Gloock', serif;
+    font-size: 3.5rem;
+    padding: 10px;
+    text-align: center;
+    color: var(--color-blue);
+}
+
+.slider h2:hover {
+    color: var(--color-red);
+    letter-spacing: 5px;
+}
+
+.slider h2:hover::before, .slider h2:hover::after {
+    content: "---";
+    color: var(--color-red);
+}
+
+.slide-container {
+    width: 70%;
+    height: 50%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.mySlide img {
+    width: 100%;
+}
+
+.mySlide {
+    display: none;
+}
+
+.column img {
+    width: 100%;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    width: auto;
+    font-size: bold;
+    font-size: 40px;
+    color: var(--color-white);
+    top: 50%;
+    padding: 16px;
+    margin-top: -50px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: var(--color-blue);
+    opacity: 0.7;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+.demo {
+    opacity: 0.6;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
 @media only screen and (max-width: 768px) {
     main {
         flex-direction: column-reverse;
@@ -220,6 +313,7 @@ footer p {
         height: 4rem;
         position: sticky;
         top: 0;
+        z-index: 3;
     }
     
     .navbar {
@@ -303,6 +397,11 @@ footer p {
 
     .content p {
         font-size: 1.3rem;
+    }
+
+    .slider h2 {
+        font-size: 2.4rem;
+        padding: 8px;
     }
 
 }

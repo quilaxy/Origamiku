@@ -93,8 +93,55 @@
         </div>
     </main>
 
-    <section>
+    <div class="slider">
+        <h2>Galeri Origamiku</h2>
+    </div>
 
+    <section class="slide-container">
+        <div class="mySlide">
+            <img src="image/Origami/origami1.jpg" alt="origami 1">
+        </div>
+        <div class="mySlide">
+            <img src="image/Origami/origami2.jpg" alt="origami 2">
+        </div>
+        <div class="mySlide">
+            <img src="image/Origami/origami3.jpg" alt="origami 3">
+        </div>
+        <div class="mySlide">
+            <img src="image/Origami/origami4.jpg" alt="origami 4">
+        </div>
+        <div class="mySlide">
+            <img src="image/Origami/origami5.jpg" alt="origami 5">
+        </div>
+        <div class="mySlide">
+            <img src="image/Origami/origami6.jpg" alt="origami 6">
+        </div>
+
+        <!-- next previous button -->
+        <a class="prev" onclick="plusSlides(-1)">&lt;</a>
+        <a class="next" onclick="plusSlides(1)">&gt;</a>
+
+        <!-- thumbnail -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="image/Origami/origami1.jpg" onclick="currentSlide(1)" alt="Origami 1">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/Origami/origami2.jpg" onclick="currentSlide(2)" alt="Origami 2">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/Origami/origami3.jpg"onclick="currentSlide(3)" alt="Origami 3">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/Origami/origami4.jpg" onclick="currentSlide(4)" alt="Origami 4">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/Origami/origami5.jpg" onclick="currentSlide(5)" alt="Origami 5">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="image/Origami/origami6.jpg" onclick="currentSlide(6)" alt="Origami 6">
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -136,7 +183,6 @@
         </div>
     </footer>
     
-
     <script src="main.js"></script>
 </body>
 </html>
